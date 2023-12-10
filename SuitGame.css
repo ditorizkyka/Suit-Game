@@ -1,0 +1,363 @@
+body {height: max-content;
+    font-family: 'Pixelify Sans', cursive;
+    background-image: url(assets/TEST.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.page1 {
+    border: brown 10px ridge;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: antiquewhite;
+    width: 50%;
+    margin: auto;
+    margin-top: -30px;
+    /* display: inline-block; */
+}
+
+.page2 {
+    display: flex;
+    /* height: ; */
+    border: brown 10px ridge;
+    border-radius: 20px;
+    font-family: 'Pixelify Sans', cursive;
+    padding: 4px;
+    background-color: antiquewhite;
+    top: 57%;
+    height: max-content;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0);
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.page2.active  {
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 300ms ease-in-out;
+
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    border: brown 10px ridge;
+    border-radius: 20px;
+    font-family: 'Pixelify Sans', cursive;
+    padding: 20px;
+    background-color: antiquewhite;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 2;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 300ms ease-in-out;
+
+}
+
+.left {
+    flex-grow: 1;
+    /* width: 50%; */
+}
+
+.right {
+    font-family: 'Pixelify Sans', cursive;
+    padding: 10px;
+    flex-grow: 2;
+    /* width: 50%; */
+}
+
+.right input {
+    margin:auto;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Pixelify Sans', cursive;
+
+}
+
+.right button {
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Pixelify Sans', cursive;
+    background-color: rgb(55, 228, 20);
+
+}
+
+.play {
+    font-size: large;
+    /* border: white 1px solid; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.container {
+    /* transform: translate(-50%,-50%) scale(0); */
+    border: brown 10px ridge;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 14px;
+    /* display: none; */
+    width: 65%;
+    height: 375px;
+    transform: translate(-50%,-50%) scale(0);
+    background-color:antiquewhite;
+    /* margin: auto; */
+    margin-top: -40px;
+    top: 65%;
+    left: 50%;
+    right:  0;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.container.active {
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 1s ease-in-out;
+}
+
+.judulWebsite img {
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+    width: 50%;
+    margin: auto;
+    display: block;
+    z-index: 3;
+}
+
+.judulWebsite.active img {
+    transform: scale(0.9);
+    transition: all 2s ease-in-out;
+
+}
+
+.txtrules {
+    border-radius: 10px 10px 0 0;
+    background-color: blue;
+    font-family: monospace;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.role {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    /* background-color: aquamarine; */
+    /* height: max-content; */
+
+}
+
+button {
+    font-family: 'Pixelify Sans', cursive;
+    border-radius: 4px;
+    display: inline;
+    margin: 5px;
+    margin-top: -5px;
+    font-size: 17px;
+    padding: 4px;
+    width: 110px;
+}
+
+
+.player {
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.player h2 {
+    font-size: 30px;
+}
+
+.player p {
+    margin-top: -10px;
+}
+
+.player .pilihan {
+    margin-top: 20px;
+
+}
+
+.player #mypilihan {
+    margin-top: -10px;
+}
+
+.bot {
+    width: 50%;
+    /* background-color: red; */
+
+}
+
+.bot p {
+    margin-left:50px;
+    margin-top: -100px;
+    padding: 10px;
+    width: 75%;
+}
+
+.bot #jawaban {
+    margin-top: -20px;
+}
+
+.bot h2 {
+    font-size: 30px;
+}
+
+.vs h2 {
+    margin-top: -350px;
+    text-align: center;
+    font-size: 60px;
+}
+
+#txtres {
+    display: inline;
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+    color: black;
+    display: block;
+    /* padding-bottom: 20px; */
+}
+
+.desc {
+    color: black;
+    margin-left: 135px;
+    margin-top: 0px;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+.result {
+    margin-top: -30px;
+    position: fixed;
+    background-color: #198754;
+    width: 570px;
+    height: 62px;
+    border-radius: 0 0 10px 10px;
+    display: block;
+}
+
+.copyright {
+    
+    color: gainsboro;
+    font-size: 7px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 530px;
+    display: block;
+}
+
+
+.closebtn {
+    font-size: 70px;
+    color: red;
+    right: 0; 
+    position: absolute; 
+    margin-top: -20px;
+    margin-right: 5px;
+}
+
+.closebtn:hover {
+    transition: 1s ease-in-out;
+    scale: 2;
+}
+
+.popup2 .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup2 .content {
+    border: brown 10px groove;
+    /* margin-top: -120px; */
+    width: 40%;
+    border-radius: 20px;
+    font-family: 'Pixelify Sans', cursive;
+    /* padding: 20px; */
+    background-color: antiquewhite;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: 2;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.popup2.active .overlay {
+    display: block;
+}
+
+.popup2.active .content {
+    transform: translate(-50%,-50%) scale(1);
+    transition: all 300ms ease-in-out;
+
+}
+
+.popup2 {
+    height: 200px;
+}
+
+.tittleHasil {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.copyright {
+    position: relative;
+    border: brown 10px ridge;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.copyright img {
+    width: 40px;
+    margin-left: 15px;
+}

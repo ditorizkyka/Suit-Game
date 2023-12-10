@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Suit Game.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="SuitGame.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="judulWebsite" id="judul-Website">
+            <img src="assets/aftercropSG-removebg-preview.png" alt="">
+        </div>
+
+        <section>
+            <div class="intro">
+                <div class="page1" id="page-1">
+                    <h2>Rules And Introduction</h2>
+                    <p style="width: 85%; margin: auto; padding: 30px; margin-top: -40px;">Dalam game ini, kamu akan bermain dengan Komputer! ada 3 pilihan untuk bisa memenangkan ini. Pilihan itu adalah gunting✂️, kertas🗒️, batu🪨. Kemenangan bakal terjadi kalo Kamu BATU bot Gunting, Kamu Gunting Bot Kertas, atau Kamu Kertas Bot Batu</p>
+                    <button class="play" onclick="play()">Play Game</button>
+                </div>
+            </div>
+            <div class="page2" id="page-2">
+                <div class="left">
+                    <img src="assets/hawk.gif" alt="" style="width: 250px;">
+
+                </div>
+                <div class="right">
+                    <div class="chat1">
+                        <h2>Hi, My name is Hawk! <br>Can i know Your name?</h2>
+                        <input class="playerName" type="text" placeholder="put your name here">
+                        <button class="submit" onclick="next2()">Next</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <div class="container" id="container1">
+
+            <div class="role">
+                <div class="player">
+                    <h2>Player</h2>
+                    <img src="assets/hawk.gif" alt="" style="width: 250px; margin-top:-30px;">
+
+                    <p>Pilihlah diantara 3 benda ini untuk melawan computer!</p>
+                    <button onclick="gunting()" value="gunting" class="guntingbtn">Gunting ✂️</button>
+                    <button onclick="kertas()" value="kertas" class="kertasbtn">Kertas 🗒️</button>
+                    <button onclick="batu()" value="batu" class="batubtn"">Batu 🪨</button>
+                </div>
+                <div class="bot">
+                    <H2>Computer</H2>
+                    <img src="assets/robot.gif" alt="" style="width: 450px; margin-top:-150px;">
+
+                    <p>Anda akan bermain dengan Computer. Secara random computer akan menentukan pilihannya sendiri</p>
+                </div>
+            </div>
+
+            <div class="vs">
+                <h2>VS</h2>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="closebtn"></div>
+                <h2 style="margin-top: 0px;">Are you sure to choose <span class="use"></span> to beat computer?</h2>
+                <button style="background-color: red; " onclick="togglePopUp()" class="backbtn" value="back">back</button>
+                <button style="background-color: rgb(32, 199, 32);"  class="nextbtn" value="next">Beat</button>
+            </div>
+        </div>
+
+        <div class="popup2" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content" style="height: 430px;">
+                <div class="tittleHasil" style="margin-top: -20px;">
+                    <h2>You <span id="txtres" style="display: inline; font-family: 'Pixelify Sans', cursive; color: black;"></span></h2>
+                </div>
+                <img src="" alt="" style="width: 280px;" class="imgWin">
+                <img src="" alt="" style="width: 250px;" class="imgLose">
+                <div>
+                    <p class="descWin" style="margin-top: -30px;"></p>
+                    <p class="descLose" style="margin-top: -110px;"></p>
+                </div>
+                <div style="padding-bottom:10px;" class="tombolMerah">
+                    <button style="background-color: red; display: inline-block; margin-bottom: -902220px; " onclick="closeBtn()" class="backbtn" value="back">back</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="copyright">
+            <img src="assets/githublogo.com.png" alt="">
+            <img src="assets/pngwing.com.png" style="width: 27px; margin-bottom: 6px;" alt="">
+            <img src="assets/linkedin (1).png" style="width: 27px; margin-bottom: 6px;" alt="">
+        </div> -->
+
+        <script src="Suitgame.js"></script>
+    
+    </body>
+</html>
